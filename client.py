@@ -165,19 +165,3 @@ class Client:
         table = create_table(table_data)
         print(table)
         return table_data
-
-client = Client('john johnson', 1000)
-client.deposit(1000, 'ATM')
-sleep(1)
-sleep(1)
-sleep(1)
-sleep(1)
-client.withdraw(1000, 'ATM')
-client.deposit(13330, 'ATM')
-client.show_bank_statement(
-    datetime.now()-timedelta(seconds=10), datetime.now())
-
-client.show_bank_statement(
-    datetime.now()-timedelta(seconds=3), datetime.now()-timedelta(seconds=1))
-client.show_bank_statement(
-    datetime.now()-timedelta(seconds=15), datetime.now()-timedelta(seconds=10))
